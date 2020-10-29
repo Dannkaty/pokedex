@@ -1,5 +1,6 @@
 //definition du 1er pokemon affiché, on a choisi le 50 +1
-let pokemonIndex; 
+let pokemonIndex;
+let pokemonList; 
 pokemonIndex = 50;
 
 // fonction pour incrementer ou decremender l'inex
@@ -21,10 +22,13 @@ function suivant(){
 	document.getElementById("boutonSuivant").onclick = function(){suivant()};
 // afficher les noms et url de tous les pokemons
 
+// function viewPokemon(pokemon){
+
+// }
 
 function fetchPokemon(){
 	fetch("https://pokeapi.co/api/v2/pokemon?limit=1050").then(response => response.json()).then(function(allPokemon){
-		let pokemonList = allPokemon.results;
+		pokemonList = allPokemon.results;
 		// console.log(pokemonList[57]);
 		document.getElementById("nomPokemon").innerHTML = pokemonList[pokemonIndex].name;
 		console.log(pokemonList[pokemonIndex].url);
