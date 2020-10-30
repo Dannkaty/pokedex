@@ -9,6 +9,11 @@ h1
 	font-family:'Bangers', cursive;
 }
 
+p
+{
+	margin : 0;
+}
+
 #affichagePokemon 
 {
 	background-color : #FEFEFE;
@@ -23,6 +28,8 @@ h1
 	background-color : #93B829;
 	margin: auto;
 } 
+
+
 
 #idPokemon, #speciesNameValue, #abilitiesValue, #heldItemsValue, #heightValue, #hpValue, #attackValue, #defenseValue, #weightValue, #speedValue, #specialAttackValue, #specialDefenseValue 
 {
@@ -69,6 +76,23 @@ h1
 	{
 		display : none;
 	}
+
+	#idPokemon
+	{
+		font-size : 20px;
+		font-weight :bold;
+	}
+
+	#speciesNameValue, #abilitiesValue, #heldItemsValue, #heightValue, #hpValue, #attackValue, #defenseValue, #weightValue, #speedValue, #specialAttackValue, #specialDefenseValue 
+	{
+		font-size: 16px;
+	}
+
+	#nomPokemon, #speciesName, #abilities, #heldItems, #height, #hp, #attack, #defense, #weight, #speed, #specialAttack, #specialDefense
+	{
+		font-size : 18px;
+	}
+
 	#nomPokemon 
 	{
 		text-align: center;
