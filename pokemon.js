@@ -41,7 +41,7 @@ function viewPokemon(pokemonIndex){
 		
 		for (var i=0;i< pokemonCharacteristic.held_items.length;i++){
 			allHeld_items += pokemonCharacteristic.held_items[i].item.name + " " ;
-			console.log(" valeur de allHeld_items " + allHeld_items);
+			// console.log(" valeur de allHeld_items " + allHeld_items);
 			document.getElementById("heldItemsValue").innerHTML = allHeld_items;
 			// console.log("valeur de pokemonCharacteristic.held_items[i].item.name " + pokemonCharacteristic.held_items[i].item.name);
 			// document.getElementById("heldItemsValue").innerHTML += pokemonCharacteristic.held_items[i].item.name + " " ;
@@ -49,7 +49,7 @@ function viewPokemon(pokemonIndex){
 
 		for (var i=0;i< pokemonCharacteristic.abilities.length;i++){
 			allAbilities += pokemonCharacteristic.abilities[i].ability.name + " " ;
-			console.log(" valeur de allAbilities " + allAbilities);
+			// console.log(" valeur de allAbilities " + allAbilities);
 			document.getElementById("abilitiesValue").innerHTML = allAbilities;
 
 			// console.log("valeur de pokemonCharacteristic.abilities[i].ability.name " + pokemonCharacteristic.abilities[i].ability.name);
@@ -57,7 +57,7 @@ function viewPokemon(pokemonIndex){
 		};
 	
 		// affiche toutes les carcteristiques d'un pokemon
-		// console.log(pokemonCharacteristic);
+		console.log(pokemonCharacteristic);
 
 		// console.log("valeur de abilities " + pokemonCharacteristic.abilities);
 		// document.getElementById("nomPokemon").innerHTML = pokemonList[57].name;
@@ -74,7 +74,7 @@ function viewPokemon(pokemonIndex){
 		// console.log("valeur de name " + pokemonCharacteristic.name);
 		document.getElementById("nomPokemon").innerHTML = pokemonCharacteristic.name;
 
-		// console.log("valeur de species " + pokemonCharacteristic.species.name);
+		console.log("valeur de species " + pokemonCharacteristic.species);
 		document.getElementById("speciesNameValue").innerHTML = pokemonCharacteristic.species.name;
 
 		// console.log("valeur de sprites " + pokemonCharacteristic.sprites.front_default);
@@ -85,7 +85,7 @@ function viewPokemon(pokemonIndex){
 		if(pokemonCharacteristic.sprites.other.dream_world.front_default!=null){
 			document.getElementById("grandeImagePokemon").innerHTML = "<img src ='"+ pokemonCharacteristic.sprites.other.dream_world.front_default + "' alt=`image d'un pokemon`/>";
 		}
-		console.log("valeur de pokemonCharacteristic.sprites.other.dream_world.front_default " + pokemonCharacteristic.sprites.other.dream_world.front_default);
+		// console.log("valeur de pokemonCharacteristic.sprites.other.dream_world.front_default " + pokemonCharacteristic.sprites.other.dream_world.front_default);
 
 		// console.log("valeur de base hp " + pokemonCharacteristic.stats[0].base_stat);
 		document.getElementById("hpValue").innerHTML = pokemonCharacteristic.stats[0].base_stat;

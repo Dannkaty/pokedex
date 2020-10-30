@@ -7,6 +7,7 @@ h1
 {
 	color : #FEFEFE;
 	font-family:'Bangers', cursive;
+	margin : 0;
 }
 
 p
@@ -27,6 +28,9 @@ p
 {
 	background-color : #93B829;
 	margin: auto;
+	display : flex;
+	flex-direction: column;
+	justify-content: space-around;
 } 
 
 
@@ -37,7 +41,7 @@ p
 	color : black;
 }
 
-#nomPokemon, #speciesName, #abilities, #heldItems, #height, #hp, #attack, #defense, #weight, #speed, #specialAttack, #specialDefense
+#nomPokemon, #speciesName, #abilities, #heldItems, #height, #hp, #attack, #defense, #weight, #speed, #specialAttack, #specialDefense, .bouton
 {
 	font-family: 'Bangers', cursive;
 	color : black;
@@ -46,7 +50,7 @@ p
 #affichageCaracteristiques 
 {
 	background-color : #FEFEFE;
-	margin: auto;
+	margin: 5px auto 5px auto;
 	display : flex;
 	flex-direction: column;
 	justify-content: center;
@@ -58,13 +62,92 @@ p
 	margin: auto;
 }
 
+#caracteristiquesHaut
+{
+	display :flex;
+	flex-direction: column;
+}
+
+.caseCaracteristiqueName
+{
+	text-align: right;
+	width: 35%;
+}
+
+.caseCaracteristiqueValue
+{
+	width: 65%;
+}
+
+#conteneurSpeciesName
+{
+	display :flex;
+}
+
+#conteneurAbilities
+{
+	display :flex;
+}
+
+#conteneurHeldItems
+{
+	display :flex;
+}
+
+#caracteristiquesBas
+{
+	display :flex;
+}
+
+#caracteristiquesBasCase
+{
+	display :flex;
+	flex-direction: column;
+	width: 50%;
+}
+
+.conteneurNameAndValue
+{
+	display :flex;
+}
+
+.caseCaracteristiqueNameBas
+{
+	text-align: right;
+	width: 70%;
+}
+
+.caseCaracteristiqueValueBas
+{
+	/*text-align: right;*/
+	/*width: 30%;*/
+}
+
+#boutonPrecedent
+{
+	background-color: #408286;
+	text-align: center;
+}
+
+#boutonSuivant
+{
+	background-color: #D2C126;
+	text-align: center;
+}
+
+#boutons
+{
+	display : flex;
+	justify-content: center;
+}
 
 /*portable max-widht = 500px pour test sinon apres remettre a 479px*/
 @media screen and (max-width: 500px)
 {
 	h1
 	{
-		text-align: center
+		text-align: center;
+		font-size : 36px;
 	}
 
 	#imagePokemon
@@ -79,13 +162,13 @@ p
 
 	#idPokemon
 	{
-		font-size : 20px;
+		font-size : 18px;
 		font-weight :bold;
 	}
 
 	#speciesNameValue, #abilitiesValue, #heldItemsValue, #heightValue, #hpValue, #attackValue, #defenseValue, #weightValue, #speedValue, #specialAttackValue, #specialDefenseValue 
 	{
-		font-size: 16px;
+		font-size: 18px;
 	}
 
 	#nomPokemon, #speciesName, #abilities, #heldItems, #height, #hp, #attack, #defense, #weight, #speed, #specialAttack, #specialDefense
@@ -98,29 +181,66 @@ p
 		text-align: center;
 	}
 
+	#idPokemon
+		{
+			margin-left: 5px;
+		} 
+
 	#affichagePokemon 
 	{
-		height: 200px;
-		width: 200px;
+		height: 180px;
+		width: 180px;
 		border-radius: 10px;
 	}
 
 	#fondImagePokemon 
 	{
-		height: 180px;
-		width: 180px;
-	} 
+		height: 160px;
+		width: 160px;
+	}
 
 	#affichageCaracteristiques 
 	{
 		height: 260px;
-		width: 325px;
+		width: 330px;
 		border-radius: 10px;
 	}
 
 	#fondImageCaracteristiques
 	{
-		height: 237px;
-		width: 301px;
+		height: 240px;
+		width: 310px;
 	}
+
+	.caseCaracteristiqueName
+	{
+		margin : 7px 3px 0px 3px;
+	}
+
+	.caseCaracteristiqueValue
+	{
+		margin : 3px;
+	}
+
+	.caseCaracteristiqueNameBas
+	{
+		margin : 7px 3px 0px 3px;
+	}
+
+	.caseCaracteristiqueValueBas
+	{
+		margin : 3px;
+	}
+
+	.bouton
+	{
+		width: 110px;
+		height: 40px;
+		font-weight: bold;
+		font-size: 30px;
+		border-radius: 5px;
+		margin : 5px 5px 0 5px;
+		padding: 7px 0 0 0;
+	}
+
 }
