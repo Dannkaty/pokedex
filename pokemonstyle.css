@@ -12,7 +12,10 @@ h1
 #affichagePokemon 
 {
 	background-color : #FEFEFE;
-
+	margin: auto;
+	display : flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 #fondImagePokemon 
@@ -36,6 +39,10 @@ h1
 #affichageCaracteristiques 
 {
 	background-color : #FEFEFE;
+	margin: auto;
+	display : flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 #fondImageCaracteristiques 
@@ -44,16 +51,15 @@ h1
 	margin: auto;
 }
 
-#speciesNameValue 
-{
-	font-family: 'Open Sans', sans-serif;
-	color : black;
-}
 
 /*portable max-widht = 500px pour test sinon apres remettre a 479px*/
 @media screen and (max-width: 500px)
 {
-	
+	h1
+	{
+		text-align: center
+	}
+
 	#imagePokemon
 	{
 		text-align: center;
