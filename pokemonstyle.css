@@ -1,46 +1,96 @@
-body{
+body
+{
 	background-color: #C10A0A; 
 }
 
-h1{
+h1
+{
 	color : #FEFEFE;
 	font-family:'Bangers', cursive;
 }
 
-#affichagePokemon {
+#affichagePokemon 
+{
 	background-color : #FEFEFE;
-	height: 200px;
-	width: 200px;
-	border-radius: 10px;
+
 }
 
-#fondImagePokemon {
+#fondImagePokemon 
+{
 	background-color : #93B829;
-	height: 180px;
-	width: 180px;
 	margin: auto;
 } 
 
-#idPokemon {
+#idPokemon, #speciesNameValue, #abilitiesValue, #heldItemsValue, #heightValue, #hpValue, #attackValue, #defenseValue, #weightValue, #speedValue, #specialAttackValue, #specialDefenseValue 
+{
 	font-family: 'Open Sans', sans-serif;
 	color : black;
 }
 
-#nomPokemon {
+#nomPokemon, #speciesName, #abilities, #heldItems, #height, #hp, #attack, #defense, #weight, #speed, #specialAttack, #specialDefense
+{
 	font-family: 'Bangers', cursive;
+	color : black;
 }
 
+#affichageCaracteristiques 
+{
+	background-color : #FEFEFE;
+}
+
+#fondImageCaracteristiques 
+{
+	background-color : #FD68DC;
+	margin: auto;
+}
+
+#speciesNameValue 
+{
+	font-family: 'Open Sans', sans-serif;
+	color : black;
+}
 
 /*portable max-widht = 500px pour test sinon apres remettre a 479px*/
-@media screen and (max-width: 500px){
-	#imagePokemon{
-		text-align: center;
-	}
-	#grandeImagePokemon {
-		display : none;
-	}
-	#nomPokemon {
+@media screen and (max-width: 500px)
+{
+	
+	#imagePokemon
+	{
 		text-align: center;
 	}
 
+	#grandeImagePokemon 
+	{
+		display : none;
+	}
+	#nomPokemon 
+	{
+		text-align: center;
+	}
+
+	#affichagePokemon 
+	{
+		height: 200px;
+		width: 200px;
+		border-radius: 10px;
+	}
+
+	#fondImagePokemon 
+	{
+		height: 180px;
+		width: 180px;
+	} 
+
+	#affichageCaracteristiques 
+	{
+		height: 260px;
+		width: 325px;
+		border-radius: 10px;
+	}
+
+	#fondImageCaracteristiques
+	{
+		height: 237px;
+		width: 301px;
+	}
 }
