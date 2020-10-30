@@ -1,7 +1,8 @@
-//definition du 1er pokemon affiché, on a choisi le 50 +1
-let pokemonIndex;
+//definition du 1er pokemon affiché, on a choisi pikachu index 24 
+let pokemonIndex = 24;
 let pokemonList; 
-pokemonIndex = 24;
+let allHeld_items = "";
+let allAbilities = "";
 
 // fonction pour decrementer l'index
 function precedent(){
@@ -9,7 +10,7 @@ function precedent(){
 		pokemonIndex -= 1;
 	}
 	// affichage de pokemon index dans le navigateur
-	document.getElementById("test").innerHTML = " la valeur du <mark>pokemon</mark> index est " + pokemonIndex;
+	// document.getElementById("test").innerHTML = " la valeur du <mark>pokemon</mark> index est " + pokemonIndex;
 
 	// affiche les caracteristiques du pokemon
 	viewPokemon(pokemonIndex);
@@ -23,7 +24,7 @@ function suivant(){
 	if (pokemonIndex <1049){
 		pokemonIndex += 1;
 	}
-	document.getElementById("test").innerHTML = pokemonIndex;
+	// document.getElementById("test").innerHTML = pokemonIndex;
 
 	// affiche les caracteristiques du pokemon
 	viewPokemon(pokemonIndex);
@@ -36,9 +37,6 @@ document.getElementById("boutonSuivant").onclick = function(){suivant()};
 function viewPokemon(pokemonIndex){
 	fetch(pokemonList[pokemonIndex].url).then(response => response.json()).then(function(onePokemon){
 		let pokemonCharacteristic = onePokemon;
-		let allHeld_items;
-		let allAbilities;
-
 
 		for (var i=0;i< pokemonCharacteristic.held_items.length;i++){
 			allHeld_items += pokemonCharacteristic.held_items[i].item.name + " " ;
@@ -70,7 +68,7 @@ function viewPokemon(pokemonIndex){
 		// console.log("valeur de held_items " + pokemonCharacteristic.held_items);
 
 		// console.log("valeur de id " + pokemonCharacteristic.id);
-		document.getElementById("idPokemon").innerHTML = pokemonCharacteristic.id;
+		document.getElementById("idPokemon").innerHTML = "#" + pokemonCharacteristic.id;
 
 		// console.log("valeur de name " + pokemonCharacteristic.name);
 		document.getElementById("nomPokemon").innerHTML = pokemonCharacteristic.name;
