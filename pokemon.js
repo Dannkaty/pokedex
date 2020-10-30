@@ -69,7 +69,10 @@ function viewPokemon(pokemonIndex){
 		document.getElementById("speciesNameValue").innerHTML = pokemonCharacteristic.species.name;
 
 		// console.log("valeur de sprites " + pokemonCharacteristic.sprites.front_default);
-		document.getElementById("imagePokemon").innerHTML = pokemonCharacteristic.sprites.front_default;
+		document.getElementById("imagePokemon").innerHTML = "<img src ='"+ pokemonCharacteristic.sprites.front_default + "' alt=`image d'un pokemon`/>";
+		
+		document.getElementById("grandeImagePokemon").innerHTML = "<img src ='"+ pokemonCharacteristic.sprites.other.dream_world.front_default + "' alt=`image d'un pokemon`/>";
+
 
 		// console.log("valeur de base hp " + pokemonCharacteristic.stats[0].base_stat);
 		document.getElementById("hpValue").innerHTML = pokemonCharacteristic.stats[0].base_stat;
