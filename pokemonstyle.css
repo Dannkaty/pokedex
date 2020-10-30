@@ -1,0 +1,46 @@
+body{
+	background-color: #C10A0A; 
+}
+
+h1{
+	color : #FEFEFE;
+	font-family:'Bangers', cursive;
+}
+
+#affichagePokemon {
+	background-color : #FEFEFE;
+	height: 200px;
+	width: 200px;
+	border-radius: 10px;
+}
+
+#fondImagePokemon {
+	background-color : #93B829;
+	height: 180px;
+	width: 180px;
+	margin: auto;
+} 
+
+#idPokemon {
+	font-family: 'Open Sans', sans-serif;
+	color : black;
+}
+
+#nomPokemon {
+	font-family: 'Bangers', cursive;
+}
+
+
+/*portable max-widht = 500px pour test sinon apres remettre a 479px*/
+@media screen and (max-width: 500px){
+	#imagePokemon{
+		text-align: center;
+	}
+	#grandeImagePokemon {
+		display : none;
+	}
+	#nomPokemon {
+		text-align: center;
+	}
+
+}
