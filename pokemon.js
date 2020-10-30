@@ -1,8 +1,7 @@
 //definition du 1er pokemon affiché, on a choisi pikachu index 24 
 let pokemonIndex = 24;
 let pokemonList; 
-let allHeld_items = "";
-let allAbilities = "";
+
 
 // fonction pour decrementer l'index
 function precedent(){
@@ -37,7 +36,9 @@ document.getElementById("boutonSuivant").onclick = function(){suivant()};
 function viewPokemon(pokemonIndex){
 	fetch(pokemonList[pokemonIndex].url).then(response => response.json()).then(function(onePokemon){
 		let pokemonCharacteristic = onePokemon;
-
+		let allHeld_items = "";
+		let allAbilities = "";
+		
 		for (var i=0;i< pokemonCharacteristic.held_items.length;i++){
 			allHeld_items += pokemonCharacteristic.held_items[i].item.name + " " ;
 			console.log(" valeur de allHeld_items " + allHeld_items);
