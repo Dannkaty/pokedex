@@ -60,6 +60,9 @@ p
 {
 	background-color : #FD68DC;
 	margin: auto;
+	display : flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 #caracteristiquesHaut
@@ -214,22 +217,22 @@ p
 
 	.caseCaracteristiqueName
 	{
-		margin : 7px 3px 0px 3px;
+		margin : 4px 3px 0px 3px;
 	}
 
 	.caseCaracteristiqueValue
 	{
-		margin : 3px;
+		margin : 0px;
 	}
 
 	.caseCaracteristiqueNameBas
 	{
-		margin : 7px 3px 0px 3px;
+		margin : 4px 3px 0px 3px;
 	}
 
 	.caseCaracteristiqueValueBas
 	{
-		margin : 3px;
+		margin : 0px;
 	}
 
 	.bouton
