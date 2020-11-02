@@ -96,7 +96,7 @@ p
 	display :flex;
 }
 
-#caracteristiquesBasCase
+.caracteristiquesBasCase
 {
 	display :flex;
 	flex-direction: column;
@@ -111,7 +111,6 @@ p
 .caseCaracteristiqueNameBas
 {
 	text-align: right;
-	width: 70%;
 }
 
 .caseCaracteristiqueValueBas
@@ -134,12 +133,10 @@ p
 #boutons
 {
 	display : flex;
-	justify-content: center;
 }
 
 /*ecran de téléphone portable */
-@media screen and (max-width: 500px)
-/*@media screen and (max-width: 479px)*/
+@media screen and (max-width: 479px)
 {
 	h1
 	{
@@ -224,11 +221,17 @@ p
 	.caseCaracteristiqueNameBas
 	{
 		margin : 4px 3px 0px 3px;
+		width: 70%;
 	}
 
 	.caseCaracteristiqueValueBas
 	{
 		margin : 0px;
+	}
+
+	#boutons
+	{
+		justify-content: center;
 	}
 
 	.bouton
@@ -245,8 +248,7 @@ p
 }
 
 /*ecran d'ordinateur*/
-/*@media screen and (min-width: 480px)*/
-@media screen and (min-width: 501px)
+@media screen and (min-width: 480px)
 {
 	body 
 	{
@@ -255,7 +257,6 @@ p
 		flex-wrap: wrap;
 		justify-content: space-around;
 		max-height: 530px;
-
 	}
 
 	h1
@@ -303,9 +304,9 @@ p
 	}
 
 	#idPokemon
-		{
-			margin-left: 5px;
-		} 
+	{
+		margin-left: 5px;
+	} 
 
 	#affichagePokemon 
 	{
@@ -319,6 +320,7 @@ p
 		height: 475px;
 		width: 475px;
 	}
+
 	/* rectangle blanc caracteristiques*/
 	#affichageCaracteristiques 
 	{
@@ -327,7 +329,8 @@ p
 		border-radius: 10px;
 		order: 3;
 	}
-/*rectangle rose caracteristiques*/
+
+	/*rectangle rose caracteristiques*/
 	#fondImageCaracteristiques
 	{
 		height: 310px;
@@ -336,7 +339,7 @@ p
 
 	#caracteristiquesHaut
 	{
-		margin : 3px 3px 50px 3px;
+		margin : 3px 3px 40px 3px;
 	}
 
 	.caseCaracteristiqueName
@@ -351,15 +354,18 @@ p
 		width: 50%;
 	}
 
-	.CaracteristiqueBas
+	#caracteristiquesBas
 	{
 		display : flex;
-		justify-content: space-around;
+		flex-direction: row;
 	}
+
+
 
 	.caseCaracteristiqueNameBas
 	{
 		margin : 4px 3px 0px 3px;
+		width: 55%;
 	}
 
 	.caseCaracteristiqueValueBas
@@ -369,6 +375,7 @@ p
 
 	#boutons 
 	{
+		justify-content: space-around;
 		order: 4;
 	}
 
@@ -381,7 +388,6 @@ p
 		border-radius: 5px;
 		margin : 5px 5px 0 5px;
 		padding: 7px 0 0 0;
-
 	}
 
 }
