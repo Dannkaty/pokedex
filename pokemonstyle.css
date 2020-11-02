@@ -74,12 +74,6 @@ p
 .caseCaracteristiqueName
 {
 	text-align: right;
-	width: 35%;
-}
-
-.caseCaracteristiqueValue
-{
-	width: 65%;
 }
 
 #conteneurSpeciesName
@@ -122,8 +116,7 @@ p
 
 .caseCaracteristiqueValueBas
 {
-	/*text-align: right;*/
-	/*width: 30%;*/
+	text-align: right;
 }
 
 #boutonPrecedent
@@ -144,8 +137,9 @@ p
 	justify-content: center;
 }
 
-/*portable max-widht = 500px pour test sinon apres remettre a 479px*/
+/*ecran de téléphone portable */
 @media screen and (max-width: 500px)
+/*@media screen and (max-width: 479px)*/
 {
 	h1
 	{
@@ -218,11 +212,13 @@ p
 	.caseCaracteristiqueName
 	{
 		margin : 4px 3px 0px 3px;
+		width: 35%;
 	}
 
 	.caseCaracteristiqueValue
 	{
 		margin : 0px;
+		width: 65%;
 	}
 
 	.caseCaracteristiqueNameBas
@@ -244,6 +240,148 @@ p
 		border-radius: 5px;
 		margin : 5px 5px 0 5px;
 		padding: 7px 0 0 0;
+	}
+
+}
+
+/*ecran d'ordinateur*/
+/*@media screen and (min-width: 480px)*/
+@media screen and (min-width: 501px)
+{
+	body 
+	{
+		display : flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		max-height: 530px;
+
+	}
+
+	h1
+	{
+		text-align: center;
+		font-size : 77px;
+		order: 2;
+	}
+
+	#imagePokemon
+	{
+		display: none;
+	}
+
+	#grandeImagePokemon 
+	{
+		text-align : center;
+	}
+
+	#idPokemon
+	{
+		font-size : 33px;
+		font-weight :bold;
+	}
+
+	#speciesNameValue, #abilitiesValue, #heldItemsValue 
+	{
+		font-size: 24px;
+	}
+	
+	#heightValue, #hpValue, #attackValue, #defenseValue, #weightValue, #speedValue, #specialAttackValue, #specialDefenseValue 
+	{
+		font-size: 18px;
+	}
+
+	#speciesName, #abilities, #heldItems, #height, #hp, #attack, #defense, #weight, #speed, #specialAttack, #specialDefense
+	{
+		font-size : 26px;
+	}
+
+	#nomPokemon 
+	{
+		text-align: center;
+		font-size: 26px;
+	}
+
+	#idPokemon
+		{
+			margin-left: 5px;
+		} 
+
+	#affichagePokemon 
+	{
+		height: 525px;
+		width: 525px;
+		border-radius: 25px;
+	}
+
+	#fondImagePokemon 
+	{
+		height: 475px;
+		width: 475px;
+	}
+	/* rectangle blanc caracteristiques*/
+	#affichageCaracteristiques 
+	{
+		height: 340px;
+		width: 630px;
+		border-radius: 10px;
+		order: 3;
+	}
+/*rectangle rose caracteristiques*/
+	#fondImageCaracteristiques
+	{
+		height: 310px;
+		width: 590px;
+	}
+
+	#caracteristiquesHaut
+	{
+		margin : 3px 3px 50px 3px;
+	}
+
+	.caseCaracteristiqueName
+	{
+		margin : 4px 3px 0px 3px;
+		width: 50%;
+	}
+
+	.caseCaracteristiqueValue
+	{
+		margin : 0px 0px 0px 30px;
+		width: 50%;
+	}
+
+	.CaracteristiqueBas
+	{
+		display : flex;
+		justify-content: space-around;
+	}
+
+	.caseCaracteristiqueNameBas
+	{
+		margin : 4px 3px 0px 3px;
+	}
+
+	.caseCaracteristiqueValueBas
+	{
+		margin : 4px 0px 0px 30px;
+	}
+
+	#boutons 
+	{
+		order: 4;
+	}
+
+	.bouton
+	{
+		width: 150px;
+		height: 40px;
+		font-weight: bold;
+		font-size: 36px;
+		border-radius: 5px;
+		margin : 5px 5px 0 5px;
+		padding: 7px 0 0 0;
+
 	}
 
 }
